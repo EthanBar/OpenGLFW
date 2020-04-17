@@ -4,9 +4,10 @@ out vec4 FragColor;
 in vec3 vertexColor;
 in vec2 texCoord;
 
-uniform sampler2D text;
+uniform sampler2D text1;
+uniform sampler2D text2;
 uniform float time;
 
 void main() {
-    FragColor = texture(text, texCoord + (sin(time) / 2) + 0.5) * vec4(vertexColor, 1.0);
+    FragColor = mix(texture(text1, texCoord), texture(text2, texCoord), 0.8);
 }
