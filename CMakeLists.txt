@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.15)
 project(OpenGLFW)
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(OpenGLFW main.cpp shader.h shader.cpp)
+add_executable(OpenGLFW main.cpp shader.h shader.cpp model.cpp model.h)
 
 set (source "${CMAKE_SOURCE_DIR}/shaders")
 set (destination "${CMAKE_CURRENT_BINARY_DIR}/shaders")
