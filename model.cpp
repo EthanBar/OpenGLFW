@@ -1,5 +1,4 @@
 #include <glad/glad.h>
-#include <iostream>
 
 #include "model.h"
 
@@ -37,3 +36,6 @@ void Model::cleanUp() {
 
 }
 
+void Model::use() {
+    glBindVertexArray(vao);
+}
