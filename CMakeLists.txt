@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
 project(OpenGLFW)
 set(CMAKE_CXX_STANDARD 14)
-add_executable(OpenGLFW main.cpp shader.h shader.cpp model.cpp model.h stb_image.h texture.cpp texture.h)
+add_executable(OpenGLFW main.cpp shader.h shader.cpp model.cpp model.h stb_image.h texture.cpp texture.h camera.h data.h)
 add_subdirectory(glm)
 target_link_libraries(${PROJECT_NAME} glm)
 
